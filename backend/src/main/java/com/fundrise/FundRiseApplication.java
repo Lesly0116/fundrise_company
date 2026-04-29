@@ -9,5 +9,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 public class FundRiseApplication {
     public static void main(String[] args) {
         SpringApplication.run(FundRiseApplication.class, args);
+        System.out.println("JWT_SECRET from env: " + System.getenv("JWT_SECRET"));
     }
 }
