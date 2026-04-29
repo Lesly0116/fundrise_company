@@ -3,23 +3,20 @@ FROM eclipse-temurin:17-jdk-alpine AS builder
 
 WORKDIR /app
 
-# Copier les fichiers Maven wrapper (chemins corrigés)
-COPY backend/mvnw ./mvnw
-COPY backend/mvnw.cmd ./mvnw.cmd
-COPY backend/.mvn ./.mvn
-COPY backend/pom.xml ./pom.xml
+# Installer Maven
+RUN apk add --no-cache maven
 
-# Rendre mvnw exécutable
-RUN chmod +x mvnw
+# Copier pom.xml d'abord (pour le caching)
+COPY backend/pom.xml .
 
 # Télécharger les dépendances
-RUN ./mvnw dependency:go-offline -B
+RUN mvn dependency:go-offline -B
 
 # Copier le code source
 COPY backend/src ./src
 
 # Compiler le JAR
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 # Étape 2: Image finale
 FROM eclipse-temurin:17-jre-alpine
