@@ -11,24 +11,26 @@ import org.springframework.stereotype.Component;
 import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
+import jakarta.annotation.PostConstruct;
 
 @Component
 @Slf4j
 public class JwtUtils {
 
-    @Value("${app.jwt.secret}")
+      @Value("${app.jwt.secret}")
     private String jwtSecret;
 
-    // FIX 1: changed int → long so expiration values > ~24 days don't silently
-    // overflow (int max = ~2.1 billion ms ≈ 24 days; long handles years safely).
     @Value("${app.jwt.expiration}")
     private long jwtExpirationMs;
 
+    //méthode de test
+    @PostConstruct
+    public void init() {
+        System.out.println("JWT SECRET = " + jwtSecret);
+        System.out.println("JWT EXPIRATION = " + jwtExpirationMs);
+    }
+
     private SecretKey key() {
-        // FIX 2: removed unused Decoders import; use explicit StandardCharsets.UTF_8
-        // so key derivation is consistent across all JVM platforms regardless of the
-        // default charset setting. The secret is treated as a raw UTF-8 string —
-        // ensure JWT_SECRET in .env is a plain (non-Base64) random string of ≥ 32 chars.
         return Keys.hmacShaKeyFor(jwtSecret.getBytes(StandardCharsets.UTF_8));
     }
 
