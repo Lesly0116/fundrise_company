@@ -46,7 +46,9 @@ public class StripeService {
     private boolean isConfigured() {
         return stripeSecretKey != null
                 && !stripeSecretKey.isEmpty()
-                && !stripeSecretKey.equals("sk_test_your_stripe_secret_key")
+		// Ancien commentaire à supprimer/modifier
+		// Supprimez la ligne qui parle de "sk_test_your_stripe_secret_key"
+                && !stripeSecretKey.equals("sk_test_placeholder")
                 && (stripeSecretKey.startsWith("sk_test_") || stripeSecretKey.startsWith("sk_live_"));
     }
 

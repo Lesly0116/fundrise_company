@@ -1,45 +1,32 @@
 # Étape 1: Build avec Maven
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+FROM eclipse-temurin:17-jdk-alpine AS builder
 
 WORKDIR /app
 
-# Copier le pom.xml et les dépendances
-COPY pom.xml .
-RUN mvn dependency:go-offline -B
+# Copier les fichiers Maven
+COPY backend/pom.xml .
+COPY backend/.mvn .mvn
+COPY backend/mvnw .
+COPY backend/mvnw.cmd .
+
+# Télécharger les dépendances
+RUN chmod +x mvnw
+RUN ./mvnw dependency:go-offline -B
 
 # Copier le code source
-COPY src ./src
+COPY backend/src ./src
 
-# Compiler l'application
-RUN mvn clean package -DskipTests
+# Compiler le JAR
+RUN ./mvnw clean package -DskipTests
 
-# Étape 2: Image d'exécution légère
+# Étape 2: Image finale
 FROM eclipse-temurin:17-jre-alpine
-
-# Créer un utilisateur non-root pour la sécurité
-RUN addgroup -S spring && adduser -S spring -G spring
-
-# Installer curl pour les health checks
-RUN apk add --no-cache curl
 
 WORKDIR /app
 
-# Copier le JAR depuis l'étape de build
-COPY --from=build /app/target/*.jar app.jar
+# Copier le JAR depuis l'étape builder
+COPY --from=builder /app/target/*.jar app.jar
 
-# Créer le dossier uploads
-RUN mkdir -p /app/uploads && chown -R spring:spring /app
-
-USER spring:spring
-
-# ⚠️ CRITIQUE: Render utilise dynamiquement le port 10000 par défaut [citation:7]
-# Il faut donc exposer un port variable ou 10000
-# On expose 8080 pour le développement local, mais Render l'ignorera
 EXPOSE 8080
 
-# Health check endpoint (doit correspondre à votre configuration Actuator)
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-  CMD curl -f http://localhost:${PORT:-8080}/actuator/health || exit 1
-
-# Utiliser le port dynamique fourni par Render via la variable d'environnement PORT
-ENTRYPOINT ["sh", "-c", "java -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -jar app.jar --server.port=${PORT:-8080}"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
