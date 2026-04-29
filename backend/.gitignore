@@ -1,0 +1,45 @@
+# ─── Compiled output ───────────────────────────────────────
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ─── Maven Wrapper JAR ─────────────────────────────────────
+# Uncomment the line below if you want to commit the jar
+# (avoids the first-run download, but adds a binary to git)
+# !.mvn/wrapper/maven-wrapper.jar
+
+# ─── Spring Boot ───────────────────────────────────────────
+*.log
+spring.log
+
+# ─── Environment / Secrets ─────────────────────────────────
+.env
+*.env
+application-local.properties
+application-prod.properties
+
+# ─── IDE: IntelliJ IDEA ────────────────────────────────────
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ─── IDE: Eclipse ──────────────────────────────────────────
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# ─── IDE: VS Code ──────────────────────────────────────────
+.vscode/
+
+# ─── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~

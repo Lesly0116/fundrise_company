@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "discover": "Discover",
+    "medical": "Medical",
+    "emergency": "Emergency",
+    "startFundrise": "Start a FundRise",
+    "signIn": "Sign In",
+    "dashboard": "Dashboard",
+    "myProfile": "My Profile",
+    "myDonations": "My Donations",
+    "adminPanel": "Admin Panel",
+    "signOut": "Sign Out"
+  },
+  "hero": {
+    "badge": "Trusted by 150M+ donors worldwide",
+    "headline1": "Raise funds for",
+    "headline2": "what matters most",
+    "subheadline": "Start your fundraiser in minutes. Zero platform fees. Secure payments. Real impact.",
+    "searchPlaceholder": "Search campaigns, causes, people...",
+    "searchBtn": "Search",
+    "startBtn": "Start a FundRise",
+    "exploreBtn": "Explore Campaigns"
+  },
+  "stats": {
+    "raised": "raised on FundRise",
+    "donors": "donors worldwide",
+    "fee": "platform fee"
+  },
+  "categories": {
+    "title": "Browse by Category",
+    "Medical": "Medical",
+    "Emergency": "Emergency",
+    "Education": "Education",
+    "Community": "Community",
+    "Animals": "Animals",
+    "Environment": "Environment",
+    "Memorial": "Memorial",
+    "Business": "Business",
+    "Sports": "Sports",
+    "General": "General"
+  },
+  "featured": {
+    "title": "Featured Campaigns",
+    "subtitle": "Top fundraisers making a difference right now",
+    "seeAll": "See all",
+    "empty": "No campaigns yet. Be the first to start one!",
+    "donorCount": "{{count}} donor",
+    "donorCount_plural": "{{count}} donors"
+  },
+  "howItWorks": {
+    "title": "How FundRise Works",
+    "step1Title": "Start your campaign",
+    "step1Desc": "Create your fundraiser in minutes. Add your story, goal amount, and a photo.",
+    "step2Title": "Share with the world",
+    "step2Desc": "Share your campaign link via social media, email, or messaging to reach donors.",
+    "step3Title": "Receive donations",
+    "step3Desc": "Donations come in securely and funds go directly to your bank account."
+  },
+  "trust": {
+    "title": "Why people trust FundRise",
+    "zeroFeeTitle": "Zero platform fees",
+    "zeroFeeDesc": "100% of every donation reaches the campaign organizer. We never take a cut.",
+    "secureTitle": "Bank-level security",
+    "secureDesc": "All payments processed by Stripe with 256-bit SSL encryption.",
+    "fastTitle": "Fast payouts",
+    "fastDesc": "Funds hit your bank account within 2–5 business days after a donation."
+  },
+  "cta": {
+    "title": "Ready to make a difference?",
+    "subtitle": "Join millions of people using FundRise to change lives — including their own.",
+    "startBtn": "Start Fundraising Free"
+  },
+  "footer": {
+    "tagline": "The world's most trusted free fundraising platform.",
+    "about": "About",
+    "aboutUs": "About Us",
+    "howItWorks": "How it Works",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "careers": "Careers",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "contactUs": "Contact Us",
+    "safety": "Safety",
+    "fundraisingTips": "Fundraising Tips",
+    "categories": "Categories",
+    "allRightsReserved": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "language": "Language"
+  },
+  "common": {
+    "goal": "goal",
+    "raised": "raised",
+    "donors": "donors",
+    "donor": "donor",
+    "daysLeft": "days left",
+    "ended": "ended",
+    "loading": "Loading...",
+    "noResults": "No campaigns found",
+    "cancel": "Cancel",
+    "save": "Save Changes",
+    "create": "Launch Campaign",
+    "edit": "Save Changes",
+    "delete": "Delete",
+    "edit_btn": "Edit"
+  }
+}

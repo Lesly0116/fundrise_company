@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "discover": "Découvrir",
+    "medical": "Médical",
+    "emergency": "Urgence",
+    "startFundrise": "Lancer une collecte",
+    "signIn": "Se connecter",
+    "dashboard": "Tableau de bord",
+    "myProfile": "Mon profil",
+    "myDonations": "Mes dons",
+    "adminPanel": "Panel admin",
+    "signOut": "Se déconnecter"
+  },
+  "hero": {
+    "badge": "Approuvé par plus de 150M de donateurs",
+    "headline1": "Collectez des fonds pour",
+    "headline2": "ce qui compte le plus",
+    "subheadline": "Lancez votre collecte en quelques minutes. Zéro frais de plateforme. Paiements sécurisés.",
+    "searchPlaceholder": "Rechercher des campagnes, causes...",
+    "searchBtn": "Rechercher",
+    "startBtn": "Lancer une collecte",
+    "exploreBtn": "Explorer les campagnes"
+  },
+  "stats": {
+    "raised": "collectés sur FundRise",
+    "donors": "donateurs dans le monde",
+    "fee": "frais de plateforme"
+  },
+  "categories": {
+    "title": "Parcourir par catégorie",
+    "Medical": "Médical",
+    "Emergency": "Urgence",
+    "Education": "Éducation",
+    "Community": "Communauté",
+    "Animals": "Animaux",
+    "Environment": "Environnement",
+    "Memorial": "Mémorial",
+    "Business": "Entreprise",
+    "Sports": "Sports",
+    "General": "Général"
+  },
+  "featured": {
+    "title": "Campagnes en vedette",
+    "subtitle": "Les meilleures collectes qui font la différence",
+    "seeAll": "Voir tout",
+    "empty": "Aucune campagne pour l'instant. Soyez le premier !",
+    "donorCount": "{{count}} donateur",
+    "donorCount_plural": "{{count}} donateurs"
+  },
+  "howItWorks": {
+    "title": "Comment fonctionne FundRise",
+    "step1Title": "Créez votre campagne",
+    "step1Desc": "Lancez votre collecte en quelques minutes. Ajoutez votre histoire, votre objectif et une photo.",
+    "step2Title": "Partagez avec le monde",
+    "step2Desc": "Partagez votre lien de campagne sur les réseaux sociaux ou par email.",
+    "step3Title": "Recevez des dons",
+    "step3Desc": "Les dons arrivent en toute sécurité directement sur votre compte bancaire."
+  },
+  "trust": {
+    "title": "Pourquoi les gens font confiance à FundRise",
+    "zeroFeeTitle": "Zéro frais de plateforme",
+    "zeroFeeDesc": "100% de chaque don va à l'organisateur. Nous ne prenons aucune commission.",
+    "secureTitle": "Sécurité bancaire",
+    "secureDesc": "Tous les paiements sont traités par Stripe avec chiffrement SSL 256 bits.",
+    "fastTitle": "Virements rapides",
+    "fastDesc": "Les fonds arrivent sur votre compte bancaire en 2 à 5 jours ouvrables."
+  },
+  "cta": {
+    "title": "Prêt à faire la différence ?",
+    "subtitle": "Rejoignez des millions de personnes qui utilisent FundRise pour changer des vies.",
+    "startBtn": "Commencer gratuitement"
+  },
+  "footer": {
+    "tagline": "La plateforme de collecte de fonds gratuite la plus fiable au monde.",
+    "about": "À propos",
+    "aboutUs": "À propos de nous",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "blog": "Blog",
+    "careers": "Carrières",
+    "support": "Support",
+    "helpCenter": "Centre d'aide",
+    "contactUs": "Nous contacter",
+    "safety": "Sécurité",
+    "fundraisingTips": "Conseils de collecte",
+    "categories": "Catégories",
+    "allRightsReserved": "Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookiePolicy": "Politique des cookies",
+    "language": "Langue"
+  },
+  "common": {
+    "goal": "objectif",
+    "raised": "collecté",
+    "donors": "donateurs",
+    "donor": "donateur",
+    "daysLeft": "jours restants",
+    "ended": "terminé",
+    "loading": "Chargement...",
+    "noResults": "Aucune campagne trouvée",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "create": "Lancer la campagne",
+    "edit": "Enregistrer les modifications",
+    "delete": "Supprimer",
+    "edit_btn": "Modifier"
+  }
+}

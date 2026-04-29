@@ -1,0 +1,33 @@
+# Copiez ce fichier en application.properties et configurez vos variables
+# Ne commitez PAS application.properties
+
+# Database
+spring.datasource.url=${DB_URL}
+spring.datasource.username=${DB_USERNAME}
+spring.datasource.password=${DB_PASSWORD}
+
+# Stripe
+stripe.secret.key=${STRIPE_SECRET_KEY:sk_test_placeholder}
+stripe.webhook.secret=${STRIPE_WEBHOOK_SECRET:whsec_placeholder}
+stripe.publishable.key=${STRIPE_PUBLISHABLE_KEY:pk_test_placeholder}
+
+# JWT
+jwt.secret=${JWT_SECRET}
+jwt.expiration=${JWT_EXPIRATION:86400000}
+
+# File Upload
+uploads.dir=${UPLOADS_DIR:uploads}
+app.base.url=${APP_BASE_URL:http://localhost:8080}
+
+# Email
+spring.mail.host=${SPRING_MAIL_HOST:smtp.gmail.com}
+spring.mail.port=${SPRING_MAIL_PORT:587}
+spring.mail.username=${SPRING_MAIL_USERNAME}
+spring.mail.password=${SPRING_MAIL_PASSWORD}
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+# Cloudinary
+cloudinary.cloud.name=${CLOUDINARY_CLOUD_NAME}
+cloudinary.api.key=${CLOUDINARY_API_KEY}
+cloudinary.api.secret=${CLOUDINARY_API_SECRET}

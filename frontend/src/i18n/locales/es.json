@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "discover": "Descubrir",
+    "medical": "Médico",
+    "emergency": "Emergencia",
+    "startFundrise": "Iniciar colecta",
+    "signIn": "Iniciar sesión",
+    "dashboard": "Panel",
+    "myProfile": "Mi perfil",
+    "myDonations": "Mis donaciones",
+    "adminPanel": "Panel de admin",
+    "signOut": "Cerrar sesión"
+  },
+  "hero": {
+    "badge": "Confiado por más de 150M de donantes",
+    "headline1": "Recauda fondos para",
+    "headline2": "lo que más importa",
+    "subheadline": "Crea tu campaña en minutos. Sin comisiones. Pagos seguros. Impacto real.",
+    "searchPlaceholder": "Buscar campañas, causas...",
+    "searchBtn": "Buscar",
+    "startBtn": "Iniciar una colecta",
+    "exploreBtn": "Explorar campañas"
+  },
+  "stats": {
+    "raised": "recaudados en FundRise",
+    "donors": "donantes en el mundo",
+    "fee": "comisión de plataforma"
+  },
+  "categories": {
+    "title": "Explorar por categoría",
+    "Medical": "Médico",
+    "Emergency": "Emergencia",
+    "Education": "Educación",
+    "Community": "Comunidad",
+    "Animals": "Animales",
+    "Environment": "Medio ambiente",
+    "Memorial": "Memorial",
+    "Business": "Negocios",
+    "Sports": "Deportes",
+    "General": "General"
+  },
+  "featured": {
+    "title": "Campañas destacadas",
+    "subtitle": "Las mejores colectas marcando la diferencia ahora",
+    "seeAll": "Ver todo",
+    "empty": "Aún no hay campañas. ¡Sé el primero!",
+    "donorCount": "{{count}} donante",
+    "donorCount_plural": "{{count}} donantes"
+  },
+  "howItWorks": {
+    "title": "Cómo funciona FundRise",
+    "step1Title": "Crea tu campaña",
+    "step1Desc": "Lanza tu colecta en minutos. Agrega tu historia, objetivo y una foto.",
+    "step2Title": "Comparte con el mundo",
+    "step2Desc": "Comparte tu enlace en redes sociales, email o mensajes para llegar a más donantes.",
+    "step3Title": "Recibe donaciones",
+    "step3Desc": "Las donaciones llegan de forma segura directamente a tu cuenta bancaria."
+  },
+  "trust": {
+    "title": "Por qué la gente confía en FundRise",
+    "zeroFeeTitle": "Sin comisiones",
+    "zeroFeeDesc": "El 100% de cada donación va al organizador. Nunca tomamos una comisión.",
+    "secureTitle": "Seguridad bancaria",
+    "secureDesc": "Todos los pagos procesados por Stripe con cifrado SSL de 256 bits.",
+    "fastTitle": "Pagos rápidos",
+    "fastDesc": "Los fondos llegan a tu cuenta bancaria en 2–5 días hábiles."
+  },
+  "cta": {
+    "title": "¿Listo para hacer la diferencia?",
+    "subtitle": "Únete a millones de personas usando FundRise para cambiar vidas.",
+    "startBtn": "Empezar gratis"
+  },
+  "footer": {
+    "tagline": "La plataforma de recaudación de fondos gratuita más confiable del mundo.",
+    "about": "Acerca de",
+    "aboutUs": "Sobre nosotros",
+    "howItWorks": "Cómo funciona",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "careers": "Empleos",
+    "support": "Soporte",
+    "helpCenter": "Centro de ayuda",
+    "contactUs": "Contáctanos",
+    "safety": "Seguridad",
+    "fundraisingTips": "Consejos para recaudar",
+    "categories": "Categorías",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio",
+    "cookiePolicy": "Política de cookies",
+    "language": "Idioma"
+  },
+  "common": {
+    "goal": "objetivo",
+    "raised": "recaudado",
+    "donors": "donantes",
+    "donor": "donante",
+    "daysLeft": "días restantes",
+    "ended": "finalizado",
+    "loading": "Cargando...",
+    "noResults": "No se encontraron campañas",
+    "cancel": "Cancelar",
+    "save": "Guardar cambios",
+    "create": "Lanzar campaña",
+    "edit": "Guardar cambios",
+    "delete": "Eliminar",
+    "edit_btn": "Editar"
+  }
+}
